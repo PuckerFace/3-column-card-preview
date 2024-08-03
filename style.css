@@ -32,7 +32,7 @@ body{
 }
 .card{
     max-width: 600px;
-    width: 100%;
+     width: 100%;
     padding: 70px;
     /* min-height: 100vh;  */
     display: grid;
@@ -98,4 +98,43 @@ button:hover{
     button {
         padding: 8px 30px;
     }
+}
+@media(max-width:1000px) {
+    button {
+        padding: 8px 20px;
+    }
+    p{
+        width: 95%;
+    }
+}
+@media(max-width:970px) {
+    .container {
+        display: block;
+        
+        }
+    .card {
+        min-height: 90vh;  
+        max-width: 400px; 
+        margin: 0px auto;
+    
+        }
+    .card_orange {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        }
+    
+    .card_green {
+            background-color: var(--dark-cyan);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 0px;
+        }
+}
+@media(max-width:460px) {
+    .card {
+        max-width: 350px;
+            
+    
+        }
 }
