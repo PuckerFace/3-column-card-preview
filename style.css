@@ -17,13 +17,85 @@ sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Lexend Deca", sans-serif;
 }
 .attribution {
     font-size: 16px;
     text-align: center;
+    margin-top: 20px;
 }
 .attribution a {
     color: var(--cyan);
 }
+body{
+    padding: 100px ;
+}
+.card{
+    max-width: 600px;
+    width: 100%;
+    padding: 70px;
+    /* min-height: 100vh;  */
+    display: grid;
 
-
+}
+h1{
+    color: var(--gray);
+    font-family: "Big Shoulders Display",sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+p{
+    color: var(--white);
+    width: 90%; 
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.card_orange{
+    background-color: var(--orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.card_cyan{
+    background-color: var(--cyan);
+}
+.card_green{
+    background-color: var(--dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+button{
+    outline: none;
+    border: 2px solid var(--gray);
+    padding: 12px 40px ; 
+    border-radius: 25px;
+}
+.card_orange button{
+    color: var(--orange);
+}
+.card_cyan button{
+    color: var(--cyan);
+}
+.card_green button{
+    color: var(--dark-cyan);
+}
+button:hover{
+    color: var(--gray);
+    background-color: transparent;
+    transition: 0.3;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media(max-width:1050px){
+    button{
+        padding: 8px 30px;
+    }
+}
+@media(max-width:1000px) {
+    button {
+        padding: 8px 30px;
+    }
+}
